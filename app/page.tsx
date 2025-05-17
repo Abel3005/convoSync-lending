@@ -4,6 +4,7 @@ import HeroSection from "@/components/hero-section"
 import Features from "@/components/features"
 import Testimonials from "@/components/testimonials"
 import Footer from "@/components/footer"
+import { SelfIntro } from "@/components/ui/selfintro"
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <Features />
-        <Testimonials />
+        <SelfIntro />
         <Footer />
       </main>
     </LanguageProvider>

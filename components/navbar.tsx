@@ -25,12 +25,7 @@ export default function Navbar() {
             <Link href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">
               {t("nav.features")}
             </Link>
-            <Link href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">
-              {t("nav.testimonials")}
-            </Link>
-            <Link href="#beta" className="text-gray-600 hover:text-blue-600 transition-colors">
-              {t("nav.beta")}
-            </Link>
+            
             <LanguageToggle />
             <Link
               href="#beta"

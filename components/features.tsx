@@ -46,76 +46,77 @@ export default function Features() {
             </div>
           ))}
         </div>
+          
+        {/* <RealActive /> */}
+      </div>
+    </section>
+  )
 
-        <div className="mt-16 bg-blue-50 rounded-xl p-8 md:p-12">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-8 md:mb-0">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{t("features.action.title")}</h3>
-              <p className="text-gray-600 mb-6">{t("features.action.description")}</p>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
-                    <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">{t("features.style")}</p>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
-                    <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">{t("features.context")}</p>
-                </div>
-                <div className="flex items-start">
-                  <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
-                    <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="ml-3 text-gray-600">{t("features.tired")}</p>
-                </div>
+  function RealActive() {
+    return <div className="mt-16 bg-blue-50 rounded-xl p-8 md:p-12">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">{t("features.action.title")}</h3>
+          <p className="text-gray-600 mb-6">{t("features.action.description")}</p>
+          <div className="space-y-4">
+            <div className="flex items-start">
+              <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
+                <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="ml-3 text-gray-600">{t("features.style")}</p>
+            </div>
+            <div className="flex items-start">
+              <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
+                <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="ml-3 text-gray-600">{t("features.context")}</p>
+            </div>
+            <div className="flex items-start">
+              <div className="flex-shrink-0 bg-blue-100 rounded-full p-1">
+                <svg className="h-4 w-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="ml-3 text-gray-600">{t("features.tired")}</p>
+            </div>
+          </div>
+        </div>
+        <div className="md:w-1/2 md:pl-8">
+          <div className="bg-white rounded-lg shadow-lg p-4 max-w-sm mx-auto">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                <span className="text-blue-600 font-semibold">JD</span>
+              </div>
+              <div className="ml-3">
+                <p className="font-medium text-gray-900">John Doe</p>
+                <p className="text-sm text-gray-500">KakaoTalk</p>
               </div>
             </div>
-            <div className="md:w-1/2 md:pl-8">
-              <div className="bg-white rounded-lg shadow-lg p-4 max-w-sm mx-auto">
-                <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-semibold">JD</span>
+            <div className="space-y-3">
+              <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
+                <p className="text-gray-800">금요일 저녁에 뭐해?</p>
+              </div>
+              <div className="bg-blue-50 rounded-lg p-3 ml-auto max-w-[80%] border border-blue-100">
+                <p className="text-gray-800 font-medium mb-1">Suggested replies:</p>
+                <div className="space-y-2">
+                  <div className="bg-white rounded p-2 text-sm border border-gray-200 cursor-pointer hover:bg-blue-50">
+                    아직 확실하지 않아요. 무슨 계획 있으신가요?
                   </div>
-                  <div className="ml-3">
-                    <p className="font-medium text-gray-900">John Doe</p>
-                    <p className="text-sm text-gray-500">KakaoTalk</p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="bg-gray-100 rounded-lg p-3 max-w-[80%]">
-                    <p className="text-gray-800">금요일 저녁에 뭐해?</p>
-                  </div>
-                  <div className="bg-blue-50 rounded-lg p-3 ml-auto max-w-[80%] border border-blue-100">
-                    <p className="text-gray-800 font-medium mb-1">Suggested replies:</p>
-                    <div className="space-y-2">
-                      <div className="bg-white rounded p-2 text-sm border border-gray-200 cursor-pointer hover:bg-blue-50">
-                        아직 확실하지 않아요. 무슨 계획 있으신가요?
-                      </div>
-                      <div className="bg-white rounded p-2 text-sm border border-gray-200 cursor-pointer hover:bg-blue-50">
-                        친구들과 저녁 식사 약속이 있어요. 같이 갈래요?
-                      </div>
-                    </div>
+                  <div className="bg-white rounded p-2 text-sm border border-gray-200 cursor-pointer hover:bg-blue-50">
+                    친구들과 저녁 식사 약속이 있어요. 같이 갈래요?
                   </div>
                 </div>
               </div>
@@ -123,6 +124,6 @@ export default function Features() {
           </div>
         </div>
       </div>
-    </section>
-  )
+    </div>
+  }
 }
